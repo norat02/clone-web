@@ -1,0 +1,27 @@
+{
+  "name": "clone-web",
+  "version": "1.1.0",
+  "description": "Multi-phase pipeline for cloning a live website into a modern codebase, plus reusable Gemini-powered assistants for code review, debugging, documentation, refactoring, and project analysis. Supports analysis, design system extraction, and parallel component build across 15 AI coding agents.",
+  "author": {
+    "name": "norat02"
+  },
+  "agents": [
+    "./agents/builder.md"
+  ],
+  "scripts": [
+    "./scripts/recon.js",
+    "./scripts/interaction-sweep.js",
+    "./scripts/download-assets.js",
+    "./scripts/visual-diff.js",
+    "./scripts/gemini.js",
+    "./scripts/analyze.js",
+    "./scripts/debug.js",
+    "./scripts/review.js",
+    "./scripts/summarize.js"
+  ],
+  "references": [
+    "./references/phases.md",
+    "./references/scaffolds.md",
+    "./references/gemini-setup.md"
+  ]
+}
